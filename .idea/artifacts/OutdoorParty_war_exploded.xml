@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OutdoorParty:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OutdoorParty_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="OutdoorParty/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OutdoorParty" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.2.10-5.2.10" />
+          <element id="library" level="project" name="Struts 2-2.3.20.1" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jta.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/quartz-all-1.6.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-collections-3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/struts2-json-plugin-2.3.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

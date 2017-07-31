@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - outdoorparty@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="outdoorparty">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="auroratech"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="intellijideafisrt"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="officeclerk"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="test"/>
+    <schema id="10" parent="1" name="tt"/>
+    <table id="11" parent="2" name="activityjointable"/>
+    <table id="12" parent="2" name="activitytable"/>
+    <table id="13" parent="2" name="admintable"/>
+    <table id="14" parent="2" name="messagetable"/>
+    <table id="15" parent="2" name="remarktable"/>
+    <table id="16" parent="2" name="studenttable"/>
+    <column id="17" parent="11" name="activityJoinId">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="11" name="acyivityId">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="19" parent="11" name="studentId">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="activityJoinState">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="21" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>activityJoinId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="12" name="ActivityId">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="12" name="ActivityName">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="ActivityAddress">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="ActivityPeopleRemainNum">
+      <Position>4</Position>
+      <DataType>int(3)|0</DataType>
+    </column>
+    <column id="26" parent="12" name="ActivityPeopleNum">
+      <Position>5</Position>
+      <DataType>int(3)|0</DataType>
+    </column>
+    <column id="27" parent="12" name="ActivityContent">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="28" parent="12" name="ActivityKind">
+      <Position>7</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="29" parent="12" name="ActivityStartTime">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="12" name="ActivityEndTime">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="12" name="ActivityTime">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="12" name="ActivityPeopleId">
+      <Position>11</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="33" parent="12" name="ActivityState">
+      <Position>12</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="34" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ActivityId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="13" name="adminId">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="13" name="adminPassword">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="37" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>adminId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="14" name="messageId">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="14" name="messageSendId">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="40" parent="14" name="messageReceiveId">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="41" parent="14" name="messageContent">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="42" parent="14" name="messageTime">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="43" parent="14" name="messageState">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="44" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>messageId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="15" name="remarkId">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="46" parent="15" name="activityId">
+      <Position>2</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="47" parent="15" name="studentId">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="48" parent="15" name="remarkContent">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="15" name="remarkTime">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="50" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>remarkId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="16" name="StudentId">
+      <Position>1</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="16" name="StudentPassword">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="53" parent="16" name="StudentName">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="54" parent="16" name="StudentClass">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="55" parent="16" name="StudentQQ">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="16" name="StudentFlower">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="57" parent="16" name="StudentSay">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="58" parent="16" name="StudentFlowerTime">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="59" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>StudentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
